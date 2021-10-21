@@ -1,0 +1,533 @@
+*{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+/* }
+body{ */
+    /* background-image: url(/img/fondo-muebles3.jpg) */ /* top center no-repeat */; 
+    /*width: 100%; */
+   /* background: #000;  */
+    /* box-sizing: 100%; */
+}
+/* ==================== start header ===================== */
+header{
+    position: fixed;
+    /* position: relative; */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 0 9%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 120px; */
+    /* height: 112px; */
+}
+header .logo{
+    height: auto;
+}
+header .logo img{
+    border: 0;
+    padding: 0;
+} 
+header .navbar{
+    height: 112px;
+    padding-top: 50px;
+}
+header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+}
+
+/* header .logo i{
+    padding-right: .5rem;
+    color: #e01021;
+} */
+
+header .navbar a:hover {
+    color: #e01021;
+}
+
+#menu-bar {
+    font-size: 3rem;
+    cursor: pointer;
+    color: #666;
+    border: .1rem solid #666;
+    border-radius: .3rem;
+    padding: .5rem 2rem;
+    display: none;          /* ocultamos el menu */
+}
+
+.img-container{
+    /* position: absolute; */
+    margin-top: 1em;
+    margin-left: 2%;
+}
+
+.img-profile{
+    clip-path: circle(40%);
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.img-profile:hover{
+    clip-path: circle(50%);
+}
+/* ======================= nav bootstrap =============== */
+.img-logo{
+    margin-left: 20px;
+}
+.navbar .navbar-brand{
+    margin-left: 20px;
+}
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.form-inline{
+    display: flex;
+    gap: .5rem;
+    justify-content: space-around;
+
+}
+.my-2{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+/* .navbar-dark .navbar-nav{
+    margin-right: 1rem;
+} */
+.navbar-dark .navbar-nav .nav-link {
+    color: #000;
+}
+.btns-principales{
+    width: 50%;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar-dark .navbar-nav a.nav-link{
+    color: #000;
+    font-size: 1.5rem;
+}
+/* .mb-2{
+    margin-bottom: 0rem;
+} */
+.b-avatar{
+    background: #fff;
+    /* margin-left: 2rem; */
+}
+ul.navbar-nav{
+    gap: 2rem;
+}
+
+/* ========================= END  HEADER ==================== */
+
+/* ========================= BUTTONS ==================== */
+.btn_content {
+    background: #e01021;
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid #e01021;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid #e01021;
+    color: #000;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;margin-top: 1rem;
+}
+
+.btn:hover {
+    color: #fff;
+    background: #e01021;
+}
+
+/* ========================= END BUTTONS ==================== */
+
+/* ========================= START HOME ==================== */
+.container img{
+    width: fit-content;
+}
+.container{
+    height: 80vh;
+    display: flex;
+    width: fit-content;
+/*     height: 100%; */
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.container .categorias{
+    display: grid;
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+    
+}
+.container .categorias .categoria1{
+    background: url(/img/alcoba.jpg);
+    /* margin-top: 25%; */
+    min-height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid;
+    box-shadow: 5px 10px;
+}
+.container .categorias .categoria2{
+    background: url(/img/comedor.jpg);
+    /* margin-top: 25%; */
+    min-height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid;  
+    box-shadow: 5px 10px; 
+}
+
+
+/* ========================= END HOME ==================== */
+
+/* ========================= START FOOTER ==================== */
+.footer{
+    justify-content: end;
+    margin-bottom: 0px;
+}
+.page-footer2 .container{
+    height: auto;
+}
+#footer{
+    /* position: fixed;*/
+    /* bottom: 0; */
+    width: 100%;
+    height: fit-content; 
+   }
+.page-footer2 {
+    position: absolute;
+    /* margin-top: 20px; */
+    padding-top: 20px;
+    background-color: #038c73;
+}
+.page-footer2 .footer-copyright {
+     
+    height: 50px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(51, 51, 51, 0.08);
+}
+
+   .redes{
+       display: flex;
+   }
+
+
+
+
+/* =========================EMPLEADOS====================================== */
+/* ========================= START EMPLEADO ==================== */
+/* .home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    min-height: 100vh; */
+    /* background: url(/img/fondo-muebles3.jpg) */
+    /* align-items: center; */
+    /* background: url(/img/img_product2.jpg) no-repeat;  */ /* pendiente fondo */
+    /* background: rgb(184, 235, 235); */
+    /* background: #fff; */
+    /* background-size: cover;
+    background-position: center; 
+    
+}
+*/
+.container .subtitle h2{
+    margin-top: 50px;
+    padding: 5px;
+    font-size: 5rem;
+    color: #666;
+}
+
+/* ======================= START REGISTER FORM ======================== */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 0px;
+  }
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    height: 80%;
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  .content_reg {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    /* box-sizing: border-box; 
+    margin-left: auto;
+    margin-right: auto; */
+  } 
+  /* Add padding to containers */
+  .container_reg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 16px;
+    background-color: white;
+  }
+    /* Full-width input fields */
+    input[type=text], input[type=password], input[type=tel] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+      }
+      
+      input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      
+      /* Overwrite default styles of hr */
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+      
+      /* Set a style for the submit button */
+      .registerbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+      
+      .registerbtn:hover {
+        opacity: 1;
+      }
+      
+      /* Add a blue text color to links */
+      a {
+        color: dodgerblue;
+      }
+      
+      /* Set a grey background color and center the text of the "sign in" section */
+      .signin {
+        background-color: #f1f1f1;
+        text-align: center;
+      }
+    .cancelbtn{
+        width: auto;
+        padding: 10px 18px;
+        background-color: #e01021;
+        border-radius: 5px;margin-bottom: 10px;
+    }
+    span.psw {
+        float: right;
+        padding-right: 5px;
+     }
+     .rol-div{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+     }
+     .rol-div .roles{
+         /* width: 30%; */
+         /* display: inline;
+         float: right; */
+        margin-left: 10px;
+        margin-right: 2px; 
+        font-size: 2rem;       
+    }
+    /* span.foto {
+        float: right;
+        padding-right: 5px;
+     } */
+    /* ======================= END REGISTER FORM ======================== */
+.botones_empleado{
+    width: 100%;
+    padding-top: 200px;
+    /* background: #e01021; */
+}
+.home .botones_empleado h2{
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 6rem;
+    color: #666;
+}
+.home .botones_empleado .detalle_empleado{
+    margin-top: 20px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home .botones_empleado .detalle_empleado td, th {
+    font-size: 2rem;
+    height: 50px;
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .home .botones_empleado .detalle_empleado th .btn{
+      height: 100%;
+      margin-top: 0px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      /* width: 100%; */
+      padding-right: 81.98;
+      padding-left: 81.98;
+  }
+  
+/* ========================= END  EMPLEADO ==================== */
+
+
+
+/* ========================= END  FOOTER ==================== */
+
+/* media queries */
+
+ @media (min-width: 992px){
+/*.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    margin-right: 5px;
+
+}*/
+/* .container{
+    -webkit-flex-direction: column;
+    flex-direction: column;
+} */
+} 
+@media (min-width: 768px){
+    .page-footer2{
+    justify-content: flex-end;
+    }
+}
+
+@media (max-width: 768px){
+    .section-home .container{
+        min-height: 100vh;
+        height: 100%;
+     }
+    .container .categorias{
+        display: block;
+        width: 100%;
+        padding-top: 5px;
+        
+    }
+    .container .categorias .categoria2{
+        margin-top: 20px;
+    }
+    .page-footer2{
+        margin-top: 20px;
+        bottom: 0px;
+        position: relative;
+    }
+    .section-home{
+        height: 100%;
+        min-height: 100vh;        
+    }
+
+}
